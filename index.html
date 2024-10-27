@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./node_modules/chart.js/dist/chart.umd.js"></script>
+  </head>
+  <body>
+    <section class="layout">
+      <div class="header">
+        <!-- New parent flex container -->
+        <div
+          class="header-container"
+          style="display: flex; align-items: center"
+        >
+          <!-- Toggle Button for Mobile View -->
+          <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+          <!-- Logo and Text Content Container -->
+          <div class="logo-container-header">
+            <img src="./img/logo.png" class="img_logo" />
+            <div class="text-content">
+              <div style="font-size: 2em; font-weight: 700">
+                <span style="color: #bacd92">RR</span
+                ><span style="color: #eabd3d">PP</span>
+              </div>
+              <div class="subtitle">Navigating Prices, Securing Futures</div>
+            </div>
+          </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="./index.html" class="nav-link home active">
+            <span class="icon"><img src="img/home.png" /></span> Home
+          </a>
+          <a href="./Pricing.html" class="nav-link pricing">
+            <span class="icon"><img src="img/peso_symbol.png" /></span> Pricing
+          </a>
+          <a href="./About.html" class="nav-link about">
+            <span class="icon"><img src="img/about.png" /></span> About
+          </a>
+        </div>
+      </div>
+      <div class="leftSide">
+        <nav class="menu">
+          <div class="logo-container">
+            <img src="./img/logo.png" class="img_logo" />
+            <div class="text-content">
+              <div class="text-logo">
+                <span style="color: #bacd92">RR</span
+                ><span style="color: #eabd3d">PP</span>
+              </div>
+              <div class="subtitle">Navigating Prices, Securing Futures</div>
+            </div>
+          </div>
+
+          <a href="./index.html" class="nav-link home active">
+            <span class="icon"><img src="img/home.png" /></span> Home
+          </a>
+          <a href="./Pricing.html" class="nav-link pricing">
+            <span class="icon"><img src="img/peso_symbol.png" /></span> Pricing
+          </a>
+          <a href="./About.html" class="nav-link about">
+            <span class="icon"><img src="img/about.png" /></span> About
+          </a>
+        </nav>
+      </div>
+      <div class="body" style="padding: 20px; align-items: center">
+        <!-- GRID LAYOUT BODY AND ITS CONTENTS  -->
+        <section class="body-layout">
+          <div class="header-container">
+            <h1>WELCOME TO DASHBOARD</h1>
+          </div>
+          <div class="container1">
+            <div class="container" style="gap: 10px">
+              <!-- content of the displayed price -->
+              <section class="price-display-layout">
+                <div class="header-description-text">
+                  <span
+                    class="inter-font"
+                    style="font-size: 15px; font-weight: 500"
+                    >Price Today</span
+                  ><i
+                    class="fi fi-ss-exclamation"
+                    style="margin-left: 10px"
+                  ></i>
+                  <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </div>
+                <div class="price-display">
+                  <span class="peso-sign">&#8369;</span> 50.00/kg
+                </div>
+                <div class="rice-type" style="padding: 0; margin: 0"></div>
+              </section>
+              <span
+                class="inter-font"
+                style="
+                  font-size: 13px;
+                  font-weight: bolder;
+                  padding-right: 30px;
+                "
+                ><p>Premium Milled Rice</p></span
+              >
+            </div>
+          </div>
+          <div class="container2">
+            <div class="container" style="gap: 10px">
+              <!-- content of the displayed price -->
+              <section class="price-display-layout">
+                <div class="header-description-text">
+                  <span
+                    class="inter-font"
+                    style="font-size: 15px; font-weight: 500"
+                    >Price Today</span
+                  ><i
+                    class="fi fi-ss-exclamation"
+                    style="margin-left: 10px"
+                  ></i>
+                  <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </div>
+                <div class="price-display">
+                  <span class="peso-sign">&#8369;</span> 50.00/kg
+                </div>
+                <div class="rice-type" style="padding: 0; margin: 0"></div>
+              </section>
+              <span
+                class="inter-font"
+                style="
+                  font-size: 13px;
+                  font-weight: bolder;
+                  padding-right: 30px;
+                "
+                ><p>Special Milled Rice</p></span
+              >
+            </div>
+          </div>
+          <div class="container3">
+            <div class="container" style="gap: 10px">
+              <!-- content of the displayed price -->
+              <section class="price-display-layout">
+                <div class="header-description-text">
+                  <span
+                    class="inter-font"
+                    style="font-size: 15px; font-weight: 500"
+                    >Price Today</span
+                  ><i
+                    class="fi fi-ss-exclamation"
+                    style="margin-left: 10px"
+                  ></i>
+                  <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </div>
+                <div class="price-display">
+                  <span class="peso-sign">&#8369;</span> 50.00/kg
+                </div>
+                <div class="rice-type" style="padding: 0; margin: 0"></div>
+              </section>
+              <span
+                class="inter-font"
+                style="
+                  font-size: 13px;
+                  font-weight: bolder;
+                  padding-right: 30px;
+                "
+                ><p>Well-Milled Rice</p></span
+              >
+            </div>
+          </div>
+          <div class="container4">
+            <div class="container" style="gap: 10px">
+              <!-- content of the displayed price -->
+              <section class="price-display-layout">
+                <div class="header-description-text">
+                  <span
+                    class="inter-font"
+                    style="font-size: 15px; font-weight: 500"
+                    >Price Today</span
+                  ><i
+                    class="fi fi-ss-exclamation"
+                    style="margin-left: 10px"
+                  ></i>
+                  <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </div>
+                <div class="price-display">
+                  <span class="peso-sign">&#8369;</span> 50.00/kg
+                </div>
+                <div class="rice-type" style="padding: 0; margin: 0"></div>
+              </section>
+              <span
+                class="inter-font"
+                style="
+                  font-size: 13px;
+                  font-weight: bolder;
+                  padding-right: 30px;
+                "
+                ><p>Regular Milled Rice</p></span
+              >
+            </div>
+          </div>
+          <div class="header2-container">
+            <h1 style="text-align: center; font-size: 22px; color: #e3ad03">
+              Historical Overview of Rice Retail Price
+            </h1>
+          </div>
+          <div class="graph" style="align-items: center">
+            <div
+              class="container-graph"
+              style="
+                width: 100%;
+                max-height: fit-content;
+                background-color: #fff;
+                padding-top: 20px;
+                text-align: center;
+              "
+            >
+              <section class="dropdown-layout">
+                <div class="grow1">
+                  <div class="year-container">
+                    Start Year:
+                    <select name="year-options" id="startYear">
+                    </select>
+                  </div>
+                </div>
+                <div class="grow1">
+                  <div class="year-container">
+                    End Year:
+                    <select name="year-options" id="endYear">
+                    </select>
+                  </div>
+                </div>
+              </section>
+              <div class="label-container">
+                <div class="container1">
+                  <i
+                    class="fi fi-ss-no-people"
+                    style="color: rgba(54, 162, 235, 1)"
+                  ></i>
+                  <p>Regular Rice</p>
+                </div>
+                <div class="container1">
+                  <i
+                    class="fi fi-ss-no-people"
+                    style="color: rgba(255, 99, 132, 1)"
+                  ></i>
+                  <p>Premium</p>
+                </div>
+                <div class="container1">
+                  <i class="fi fi-ss-no-people" style="color: #dcf16f"></i>
+                  <p>Special</p>
+                </div>
+                <div class="container1">
+                  <i
+                    class="fi fi-ss-no-people"
+                    style="color: rgba(153, 102, 255, 1)"
+                  ></i>
+                  <p>Well Milled</p>
+                </div>
+              </div>
+              <div class="chart-container">
+                <div class="chart-small">
+                  <canvas id="line-chart1"></canvas>
+                </div>
+                <div class="chart-large">
+                  <div class="box">
+                    <canvas id="line-chart2"></canvas>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <!-- GRID LAYOUT BODY AND ITS CONTENTS  ENDS -->
+      </div>
+      <div class="rightSide">
+        <h1>Last Updates</h1>
+        <div class="update-wrapper">
+          <div id="latest-update-premium" class="update-container">
+            <section class="update-container-layout">
+              <div class="header-description-text">
+                <i class="fa-regular fa-calendar"></i> Loading...
+              </div>
+              <div class="price-display">
+                <span class="peso-sign">&#8369;</span> --/kg
+              </div>
+            </section>
+            <span
+              class="inter-font"
+              style="font-size: 11px; font-weight: bolder"
+              >Premium Rice</span
+            >
+          </div>
+          <div id="latest-update-special" class="update-container">
+            <section class="update-container-layout">
+              <div class="header-description-text">
+                <i class="fa-regular fa-calendar"></i> Loading...
+              </div>
+              <div class="price-display">
+                <span class="peso-sign">&#8369;</span> --/kg
+              </div>
+            </section>
+            <span
+              class="inter-font"
+              style="font-size: 11px; font-weight: bolder"
+              >Special Rice</span
+            >
+          </div>
+          <div id="latest-update-well-milled" class="update-container">
+            <section class="update-container-layout">
+              <div class="header-description-text">
+                <i class="fa-regular fa-calendar"></i> Loading...
+              </div>
+              <div class="price-display">
+                <span class="peso-sign">&#8369;</span> --/kg
+              </div>
+            </section>
+            <span
+              class="inter-font"
+              style="font-size: 11px; font-weight: bolder"
+              >Well-Milled Rice</span
+            >
+          </div>
+          <div id="latest-update-regular" class="update-container">
+            <section class="update-container-layout">
+              <div class="header-description-text">
+                <i class="fa-regular fa-calendar"></i> Loading...
+              </div>
+              <div class="price-display">
+                <span class="peso-sign">&#8369;</span> --/kg
+              </div>
+            </section>
+            <span
+              class="inter-font"
+              style="font-size: 11px; font-weight: bolder"
+              >Regular Rice</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-container">
+          <section class="footer-layout">
+            <div class="logo-row">
+              <section class="layout">
+                <div class="logo">
+                  <img src="./img/logo.png" class="img_logo" />
+                </div>
+                <div class="logo-text-container">
+                  <div class="text-logo">
+                    <span style="color: #bacd92">RR</span
+                    ><span style="color: #eabd3d">PP</span>
+                  </div>
+                </div>
+                <div class="subtitle-container">
+                  <div class="text-content">
+                    <div class="subtitle">
+                      Navigating Prices, Securing Futures
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="grow1">
+              <a href="./index.html">Home</a>
+              <a href="./Pricing.html">Pricing</a>
+              <a href="./About.html">About</a>
+            </div>
+          </section>
+          <div class="footer-copyright">
+            <p>© 2024 Rice Retail Price Prediction. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"
+    ></script>
+    <script src="./js/home.js"></script>
+    <script>
+      // JavaScript function to toggle menu display
+      function toggleMenu() {
+        const menuContent = document.getElementById("mySidenav");
+        menuContent.style.width =
+          menuContent.style.width === "250px" ? "0px" : "250px";
+      }
+
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", function () {
+          document
+            .querySelectorAll(".nav-link")
+            .forEach((link) => link.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function fetchRiceData(csvFilePath, containerClass) {
+          fetch(csvFilePath)
+            .then((response) => response.text())
+            .then((data) => {
+              const rows = data.trim().split("\n").slice(1);
+              const latestEntry = rows[rows.length - 1].split(",");
+
+              const price = latestEntry[3];
+
+              const updateContainer = document.querySelector(
+                `.${containerClass}`
+              );
+              const priceDisplay =
+                updateContainer.querySelector(".price-display");
+
+              priceDisplay.innerHTML = `
+            <span class="peso-sign">&#8369;</span> <span class="inter-font" style="font-size:22px;">${price}/kg</span>
+          `;
+            })
+            .catch((error) =>
+              console.error("Error fetching the CSV file:", error)
+            );
+        }
+
+        fetchRiceData("./datasets/reduced_premium_rice.csv", "container1");
+        fetchRiceData("./datasets/reduced_special_rice.csv", "container2");
+        fetchRiceData("./datasets/reduced_well_milled_rice.csv", "container3");
+        fetchRiceData(
+          "./datasets/reduced_regular_milled_rice.csv",
+          "container4"
+        );
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function getMonthName(monthNumber) {
+          const months = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+          ];
+          return months[monthNumber - 1];
+        }
+
+        function fetchRiceData(csvFilePath, elementId) {
+          fetch(csvFilePath)
+            .then((response) => response.text())
+            .then((data) => {
+              const rows = data.trim().split("\n").slice(1);
+              const latestEntry = rows[rows.length - 1].split(",");
+
+              const year = latestEntry[1];
+              const month = getMonthName(parseInt(latestEntry[2]));
+              const price = latestEntry[3];
+
+              const updateContainer = document.getElementById(elementId);
+              const section = updateContainer.querySelector(
+                ".update-container-layout"
+              );
+
+              section.innerHTML = `
+                      <div class="header-description-text">
+                          <i class="fi fi-rs-calendar" style="margin-right:5px;"></i> <span class="inter-font" style="font-weight:bolder; font-size:12px;">${year} ${month}</span>
+                      </div>
+                      <div class="price-display">
+                          <span class="peso-sign">&#8369;</span> <span class="inter-font" style="font-size:22px;">${price}/kg</span>
+                      </div>
+                  `;
+            })
+            .catch((error) =>
+              console.error("Error fetching the CSV file:", error)
+            );
+        }
+
+        fetchRiceData(
+          "./datasets/reduced_premium_rice.csv",
+          "latest-update-premium"
+        );
+        fetchRiceData(
+          "./datasets/reduced_special_rice.csv",
+          "latest-update-special"
+        );
+        fetchRiceData(
+          "./datasets/reduced_well_milled_rice.csv",
+          "latest-update-well-milled"
+        );
+        fetchRiceData(
+          "./datasets/reduced_regular_milled_rice.csv",
+          "latest-update-regular"
+        );
+      });
+    </script>
+  </body>
+</html>
